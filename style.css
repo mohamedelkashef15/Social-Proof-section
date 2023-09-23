@@ -34,6 +34,7 @@ p {
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 
 #reviews .row {
@@ -118,4 +119,58 @@ p {
 
 #reviews .testimonials .card:nth-child(3) {
   transform: translateY(40px);
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  #reviews {
+    height: auto;
+  }
+
+  #reviews .row {
+    grid-template-columns: 1fr;
+  }
+
+  #reviews .row .col-1 h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #reviews .row .col-1 p {
+    text-align: center;
+  }
+
+  #reviews .row .col-2 .rating {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  #reviews .row .col-2 .rating span {
+    display: block;
+    margin-top: 10px;
+  }
+
+  #reviews .row .col-2 .rating:nth-child(1) {
+    transform: translateX(0);
+  }
+
+  #reviews .row .col-2 .rating:nth-child(2) {
+    transform: translateX(0);
+  }
+
+  #reviews .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  #reviews .testimonials .card {
+    margin-bottom: 30px;
+  }
+
+  #reviews .testimonials .card:nth-child(2) {
+    transform: translateY(0px);
+  }
+
+  #reviews .testimonials .card:nth-child(3) {
+    transform: translateY(0px);
+  }
 }
