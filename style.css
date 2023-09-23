@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(300, 43%, 22%);
+  --Light-Magenta: hsl(300, 24%, 96%);
+  --secondary-color: hsl(303, 10%, 53%);
+  --soft-pink-color: hsl(333, 80%, 67%);
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Utility Classes if there are more sections */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Main Styling | Review Section*/
+#reviews {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#reviews .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15rem;
+}
+
+#reviews .row .col-1 h1 {
+  font-size: 45px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+#reviews .row .col-1 p {
+  color: var(--secondary-color);
+}
+
+#reviews .row .col-2 .rating {
+  background-color: var(--Light-Magenta);
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#reviews .row .col-2 .rating span {
+  margin-left: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+#reviews .row .col-2 .rating:nth-child(1) {
+  transform: translateX(-100px);
+}
+
+#reviews .row .col-2 .rating:nth-child(2) {
+  transform: translateX(-50px);
+}
+
+#reviews .testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  column-gap: 2rem;
+}
+
+#reviews .testimonials .card {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#reviews .testimonials .card .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#reviews .testimonials .card .card-header h3 {
+  color: var(--Light-Magenta);
+}
+
+#reviews .testimonials .card>p {
+  color: var(--Light-Magenta);
+}
+
+#reviews .testimonials .card .card-header p {
+  color: var(--soft-pink-color);
+  margin-top: 3px;
+  opacity: 80%;
+}
+
+#reviews .testimonials .card .card-header img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+#reviews .testimonials .card:nth-child(2) {
+  transform: translateY(20px);
+}
+
+#reviews .testimonials .card:nth-child(3) {
+  transform: translateY(40px);
+}
